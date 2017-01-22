@@ -1,0 +1,32 @@
+stage1:
+say: You are in a forest traped below a tree
+say: You have two option 1) look for a river, 2) look for a sign of life
+listen: What do you choose?
+if: 1
+switch: stage2
+if: 2
+switch: stage3
+end
+
+stage2:
+say: You found a fountain that goes below the mountain
+say: You find a cave. Walking? (yes/no)
+listen: Your answer?
+if: yes
+switch: stage4
+if: no
+end
+
+stage3:
+say: You will find a hut with food on the table.
+say: Will you eat the food? (yes/no)
+listen: Your answer?
+if: yes
+switch: stage4
+if: no
+end
+
+stage4:
+say: You successfully win the game.
+say: Congratulations.
+end
